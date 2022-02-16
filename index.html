@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Assignment</title>
+
+    <!-- Tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl font-bold text-center mt-6 mb-6">MiddleClass Life Calculator</h1>
+    </header>
+
+    <section class="sm:grid gap-8 grid-cols-2">
+        <div>
+            <img src="images/image1.jpg" alt="">
+        </div>
+
+        <div class="second-div">
+            <div class="text-center mt-4 mb-4">
+                <h4 class="font-medium mb-2">Income</h4>
+
+                <p>Income: <input type="text"></p>
+
+                <h4 class="font-medium mb-2">Expenses</h4>
+
+                <div>
+                    <p class="mb-2">Food: <input type="text"></p>
+                    <p class="mb-2">Rent: <input type="text"></p>
+                    <p class="mb-2">Cloths: <input type="text"></p>
+                </div>
+                <button class="btn font-medium mt-1 mb-2 pt-1 pb-1 pr-3 pl-3 rounded">Calculate</button>
+                
+                <h4 class="font-medium">Total Expenses: </h4>
+                <h4 class="font-medium mb-2">Balance: </h4>
+
+                <div class="flex justify-center mb-2">
+                    <p>Save: <input type="text"> %</p>
+                    <button class="btn font-medium ml-2 -mt-1 pt-1 pb-1 pr-6 pl-6 rounded">Save</button>
+                </div>
+
+                <h4 class="font-medium">Saving Amount: </h4>
+                <h4 class="font-medium mb-2">Remaining Balance: </h4>
+        </div>
+    </section>
+</body>
+</html>
