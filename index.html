@@ -28,6 +28,11 @@
 
                 <p>Income: <input id="income-input" type="text"></p>
 
+                <!-- error message  -->
+                <div>
+                    <p id="error-message-1" class="notify">please type positive numbers...</p>
+                </div>
+
                 <!-- expenses field  -->
                 <h4 class="font-medium mb-2">Expenses</h4>
 
@@ -36,6 +41,12 @@
                     <p class="mb-2">Rent: <input id="house-rent-cost" type="text"></p>
                     <p class="mb-2">Cloths: <input id="cloths-cost" type="text"></p>
                 </div>
+
+                <!-- error meaasge  -->
+                <div>
+                    <p class="notify">please type numbers...</p>
+                </div>
+
                 <button id="calculate-button" class="btn font-medium mt-1 mb-2 pt-1 pb-1 pr-3 pl-3 rounded">Calculate</button>
                 
                 <h4 class="font-medium">Total Expenses: <span id="total-expenses"> </span> </h4>

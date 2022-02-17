@@ -1,12 +1,21 @@
+/* header text color  */
 h1{
     color: rgb(217 119 6);
 }
 
+/* div color  */
 .second-div{
     background-color: rgb(226 232 240);
 }
 
+/* button color  */
 .btn{
     color: rgb(0, 0, 0);
     background-color: rgb(217 119 6);
+}
+
+/*error message*/
+.notify{
+    color: rgb(255, 0, 0);
+    display: none;
 }
