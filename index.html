@@ -30,7 +30,7 @@
 
                 <!-- error message  -->
                 <div>
-                    <p id="error-message-1" class="notify">please type positive numbers...</p>
+                    <p id="error-message-1" class="notify">warning: please type positive numbers...</p>
                 </div>
 
                 <!-- expenses field  -->
@@ -44,17 +44,27 @@
 
                 <!-- error meaasge  -->
                 <div>
-                    <p class="notify">please type numbers...</p>
+                    <p id="error-message2" class="notify">Warning: please type positive numbers...</p>
                 </div>
 
+                <div>
+                    <p id="error3" class="notify">Warning: Your expenses can't be more than your income...</p>
+                </div>
+
+                <!-- calculate button  -->
                 <button id="calculate-button" class="btn font-medium mt-1 mb-2 pt-1 pb-1 pr-3 pl-3 rounded">Calculate</button>
                 
                 <h4 class="font-medium">Total Expenses: <span id="total-expenses"> </span> </h4>
                 <h4 class="font-medium mb-2">Balance: <span id="remaining-balance"> </span> </h4>
 
+                <!-- saving div  -->
                 <div class="flex justify-center mb-2">
                     <p>Save: <input id="saving-input" type="text"> %</p>
                     <button id="save-button" class="btn font-medium ml-2 -mt-1 pt-1 pb-1 pr-6 pl-6 rounded">Save</button>
+                </div>
+
+                <div>
+                    <p id="error-message-4" class="notify">warning: Saving amount can't be more than your balance...</p>
                 </div>
 
                 <h4 class="font-medium">Saving Amount: <span id="saving-amount"> </span></h4>
