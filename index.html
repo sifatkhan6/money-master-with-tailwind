@@ -18,7 +18,7 @@
 
     <section class="sm:grid gap-8 grid-cols-2 sm:ml-12 sm:mr-12">
         <div>
-            <img src="images/image1.jpg" alt="">
+            <img class="sm:h-full sm:w-full" src="images/image1.jpg" alt="">
         </div>
 
         <div class="second-div">
@@ -26,7 +26,9 @@
                 <!-- income field  -->
                 <h4 class="font-medium mb-2">Income</h4>
 
-                <p>Income: <input id="income-input" type="text"></p>
+                <div class="grid justify-items-end mr-44">
+                    <p>Income: <input id="income-input" type="text"></p>
+                </div>
 
                 <!-- error message  -->
                 <div>
@@ -36,7 +38,7 @@
                 <!-- expenses field  -->
                 <h4 class="font-medium mb-2">Expenses</h4>
 
-                <div>
+                <div class="grid justify-items-end mr-44">
                     <p class="mb-2">Food: <input id="food-cost" type="text"></p>
                     <p class="mb-2">Rent: <input id="house-rent-cost" type="text"></p>
                     <p class="mb-2">Cloths: <input id="cloths-cost" type="text"></p>
@@ -58,9 +60,9 @@
                 <h4 class="font-medium mb-2">Balance: <span id="remaining-balance"> </span> </h4>
 
                 <!-- saving div  -->
-                <div class="flex justify-center mb-2">
-                    <p>Save: <input id="saving-input" type="text"> %</p>
-                    <button id="save-button" class="btn font-medium ml-2 -mt-1 pt-1 pb-1 pr-6 pl-6 rounded">Save</button>
+                <div class="flex justify-center mb-2 -ml-8">
+                    <p>Save: <input id="saving-input" class="h-full w-2/4" type="text"> %</p>
+                    <button id="save-button" class="btn font-medium -ml-6 pt-1 pb-1 pr-6 pl-6 rounded">Save</button>
                 </div>
 
                 <div>

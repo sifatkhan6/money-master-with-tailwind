@@ -47,6 +47,7 @@ document.getElementById('calculate-button').addEventListener('click', function()
     }
     
     else{
+    // function calling 
     const finalCostAmount = getTotalExpenses(incomeAmount);
     
     // remaining balance 
@@ -55,11 +56,6 @@ document.getElementById('calculate-button').addEventListener('click', function()
         if(incomeAmount < finalCostAmount){
             const error3 = document.getElementById('error3');
             error3.style.display = 'block';
-            incomeInput.value = '';
-            document.getElementById('food-cost').value = '';
-            document.getElementById('house-rent-cost').value = '';
-            document.getElementById('cloths-cost').value = '';
-            document.getElementById('total-expenses').value = '';
             document.getElementById('remaining-balance').innerText = '';
             document.getElementById('total-expenses').innerText = '';
         }
@@ -80,6 +76,7 @@ document.getElementById('save-button').addEventListener('click', function(){
     const incomeAmountText = incomeInput.value;
     const incomeAmount = parseFloat(incomeAmountText);
 
+    // function calling 
     const finalCostAmount = getTotalExpenses(incomeAmount);
     
         // remaining balance 
@@ -112,6 +109,4 @@ document.getElementById('save-button').addEventListener('click', function(){
         remainingBalanceAfterSavingOutput = document.getElementById('remaining-balance-afterSaving');
         remainingBalanceAfterSavingOutput.innerText = remainingBalanceAfterSaving;
         }
-
-        // new line 
 })
