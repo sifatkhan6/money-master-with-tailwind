@@ -23,30 +23,33 @@
 
         <div class="second-div">
             <div class="text-center mt-4 mb-4">
+                <!-- income field  -->
                 <h4 class="font-medium mb-2">Income</h4>
 
-                <p>Income: <input type="text"></p>
+                <p>Income: <input id="income-input" type="text"></p>
 
+                <!-- expenses field  -->
                 <h4 class="font-medium mb-2">Expenses</h4>
 
                 <div>
-                    <p class="mb-2">Food: <input type="text"></p>
-                    <p class="mb-2">Rent: <input type="text"></p>
-                    <p class="mb-2">Cloths: <input type="text"></p>
+                    <p class="mb-2">Food: <input id="food-cost" type="text"></p>
+                    <p class="mb-2">Rent: <input id="house-rent-cost" type="text"></p>
+                    <p class="mb-2">Cloths: <input id="cloths-cost" type="text"></p>
                 </div>
-                <button class="btn font-medium mt-1 mb-2 pt-1 pb-1 pr-3 pl-3 rounded">Calculate</button>
+                <button id="calculate-button" class="btn font-medium mt-1 mb-2 pt-1 pb-1 pr-3 pl-3 rounded">Calculate</button>
                 
-                <h4 class="font-medium">Total Expenses: </h4>
-                <h4 class="font-medium mb-2">Balance: </h4>
+                <h4 class="font-medium">Total Expenses: <span id="total-expenses"> </span> </h4>
+                <h4 class="font-medium mb-2">Balance: <span id="remaining-balance"> </span> </h4>
 
                 <div class="flex justify-center mb-2">
-                    <p>Save: <input type="text"> %</p>
-                    <button class="btn font-medium ml-2 -mt-1 pt-1 pb-1 pr-6 pl-6 rounded">Save</button>
+                    <p>Save: <input id="saving-input" type="text"> %</p>
+                    <button id="save-button" class="btn font-medium ml-2 -mt-1 pt-1 pb-1 pr-6 pl-6 rounded">Save</button>
                 </div>
 
-                <h4 class="font-medium">Saving Amount: </h4>
-                <h4 class="font-medium mb-2">Remaining Balance: </h4>
+                <h4 class="font-medium">Saving Amount: <span id="saving-amount"> </span></h4>
+                <h4 class="font-medium mb-2">Remaining Balance: <span id="remaining-balance-afterSaving"> </span></h4>
         </div>
     </section>
+    <script src="functions.js"></script>
 </body>
 </html>
