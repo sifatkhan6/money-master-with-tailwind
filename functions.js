@@ -112,4 +112,6 @@ document.getElementById('save-button').addEventListener('click', function(){
         remainingBalanceAfterSavingOutput = document.getElementById('remaining-balance-afterSaving');
         remainingBalanceAfterSavingOutput.innerText = remainingBalanceAfterSaving;
         }
+
+        // new line 
 })
