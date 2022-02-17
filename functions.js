@@ -95,6 +95,8 @@ document.getElementById('save-button').addEventListener('click', function(){
         if(savingAmount > remainingBalance){
             const error4 = document.getElementById('error-message-4');
             error4.style.display = 'block';
+            document.getElementById('saving-amount').innerText = '';
+            document.getElementById('remaining-balance-afterSaving').innerText = '';
         }
 
         else{
